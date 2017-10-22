@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+   
+<script type="text/javascript">
+function validate()
+{
+  if(document.fname.name.value=="")
+  {
+	alert("Sorry! U must enter NAME");
+	document.fname.name.focus();
+return false;
+	
+  }else 
+  if(document.fname.name.value.length>20)
+   {
+	alert("name is out of range(maximum 20)");
+	document.fname.name.focus();
+return false;
+   }
+if(document.fname.reg.value=="")
+  {
+	alert("Sorry! U must enter REGISTRATION NO");
+	document.fname.reg.focus();
+return false;
+	
+  } 
+  if(document.fname.reg.value.length>8)
+   {
+	alert("name is out of range(maximum 8)");
+	document.fname.reg.focus();
+return false;
+   }
+if(document.fname.gender.value=="")
+  {
+	alert("Sorry! U must select gender");
+	document.fname.gender.focus();
+return false;
+	
+  } 
+if(document.fname.hobies.value=="")
+  {
+	alert("Sorry! U must select HOBIES");
+	document.fname.hobies.focus();
+return false;
+	
+  } 
+
+var a=document.getElementById("lang1");
+var b=document.getElementById("lang2");
+var c=document.getElementById("lang3");
+if((a.checked==false)&&(b.checked==false)&&(c.checked==false))
+
+  {
+	alert("Sorry! U must select atleast one LANGUAGE");
+	document.fname.language.focus();
+return false;
+  } 
+if(document.fname.address.value=="")
+  {
+	alert("Sorry! U must enter ADDRESS");
+	document.fname.address.focus();
+return false;
+	
+  } 
+  if(document.fname.address.value.length>20)
+   {
+	alert("name is out of range(maximum 20)");
+	document.fname.address.focus();
+return false;
+   }
+if(document.fname.email.value=="")
+  {
+	alert("Sorry! U must enter EMAIL");
+	document.fname.email.focus();
+return false;
+	
+  } 
+  if(document.fname.email.value.length>20)
+   {
+	alert("name is out of range(maximum 20)");
+	document.fname.email.focus();
+return false;
+   }
+
+    
+  
+if(document.fname.mob.value=="alphabet")
+  {
+	alert("please enter only numeric value");
+	document.fname.mob.focus();
+return false;
+	
+  } 
+if(document.fname.mob.value.length>10)
+   {
+	alert("mobile no is out of range(maximum 10)");
+	document.fname.mob.focus();
+return false;
+   }
+
+}
+     
+
+</script>
+</head>
+
+<body bgcolor=white background=paper_bg.gif>
+<form name="fname" onsubmit="return(validate());">
+    <center> <h3><img src=image\logo.jpg  height="50" width="50"> National Institute of Technology, Durgappur</h3>
+     </center>
+   
+
+<table align="center" bgcolor="lightgray" border="2px" height="550px" width="500px">
+<tr>
+     <style>
+h3{color:black}
+h3{fontframing:Arial}
+</style>
+            	<td colspan="3" align="center"><h3>Registration Form</h3></td>
+    
+            </tr>
+<tr>
+<td>NAME</td>
+<td><input type="text" name="name" ></input></br></td>
+</tr>
+<tr>
+
+<td>REGISTRATION NO</td>
+
+<td><input type="text" name="reg"></input></br></td>
+</tr>
+
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type= "date" name="dob"></input></br></td>
+</tr>
+
+<tr>
+<td>Hostler ID</td>
+<td><input type="text" name="HID"></input></br></td>
+</tr>
+<tr>
+            	<td>State</td>
+                
+                <td>
+                	<select name="State">
+                    	<option>select</option>
+                        <option>ANDRA PRADESH</option>
+                        <option>ARUNACHAL PRADESH</option>
+                        <option>ASSAM</option>
+                        <option>BIHAR</option>
+                        <option>CHATTISGARH</option>
+                        <option>GOA</option>
+                        <option>GUJRAT</option>
+                        <option>HARIYANA</option>
+                        <option>HIMACHAL PRADESH</option>
+                        <option>JAMMU AND KASHMIR</option>
+                         <option>JHARKHAND</option>
+                         <option>KARNATAKA</option>
+                         <option>KERELA</option>
+                         <option>MADHYA PRADESH</option>
+                         <option>MAHARASHTRA</option>
+                         <option>MANIPUR</option>
+                         <option>MEGHALAYA</option>
+                         <option>MIZORAM</option>
+                        <option>NAGALAND</option> 
+                        <option>ORISSA</option> 
+                        <option>PUNJAB</option>
+                        <option>RAJASTHAN</option>
+                        <option>SIKKIM</option> 
+                        <option>TAMIL NADU</option> 
+                        <option>TELANGANA</option>
+                        <option>TRIPURA</option>
+                        <option>UTTAR PRADESH</option> 
+                        <option>UTTRAKHAND</option> 
+                        <option>WEST BENGAL</option>                    
+
+                 </select>
+                </td>
+             </tr>
+
+<tr>
+            		<td>ADDRESS</td>
+                	
+                	<td><textarea name="address"></textarea></td>
+            	</tr>
+<tr>
+            		<td>EMAIL</td>
+                	
+                	<td><input type="text" name="email"></td>
+            	</tr>
+<tr>
+            		<td>Password</td>
+                	
+                	<td><input type="password" name="pw"></td>
+            	</tr>
+<tr>
+            		<td>Re-enter Password</td>
+                	
+                	<td><input type="password" name="rpw"></td>
+            	</tr>
+
+
+
+<tr>
+<td>DATE OF JOINING</td>
+<td><input type="date" name="doJ"></input></br></td>
+</tr>
+
+
+<tr>
+<td>DEGREE</td>
+<td><input type="text" name="DEGREE" ></input></br></td>
+</tr>
+
+<tr>
+<td>YEAR</td>
+<td>
+<select name="year">
+                    	
+    <option>select</option>
+    <option>1st year</option>
+    <option>2nd year</option>
+    <option>3rd year</option>
+    <option>4th year</option>
+    </select></td>
+</tr>
+    
+<tr>
+<td>MOBILE NO</td>
+<td><input type="num" name="mob"></input></br></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="Submit" /></td>
+
+<br> <td><input type=submit name=b2 value=CANCEL>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=reset name=b2 value=CLEAR></td>
+ </tr>
+</table>
+<br><br>
+<center>
+<form action="">
+<input type="checkbox" name="vehicle" value="Bike">The above information is true to the best of my knowledge<br>
+ </center>
+</form>
+
+</form>
+</body>
+</html>
